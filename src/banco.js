@@ -34,7 +34,7 @@ async function close() {
   if (client) {
     try {
       await client.close();
-      logger.info('✕ Conexão com MongoDB encerrada');
+      logger.info('Conexão com MongoDB encerrada');
     } catch (err) {
       logger.error('Erro ao fechar conexão com MongoDB:', err);
       throw err;

@@ -19,7 +19,7 @@ async function inserirUsuarios() {
       usuario2._id.toString()
     );
   } catch (err) {
-    logger.error('✗ Erro em inserirUsuarios:', err);
+    logger.error('Erro em inserirUsuarios:', err);
   } finally {
     await close();
     process.exit(0);

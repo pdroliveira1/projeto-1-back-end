@@ -10,7 +10,7 @@ async function listarUsuarios() {
     const usuarios = await Usuario.listar();
     console.table(usuarios);
   } catch (err) {
-    logger.error('✗ Erro em listarUsuarios:', err);
+    logger.error('Erro em listarUsuarios:', err);
   } finally {
     await close();
     process.exit(0);

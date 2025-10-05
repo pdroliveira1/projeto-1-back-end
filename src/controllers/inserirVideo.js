@@ -26,7 +26,7 @@ async function inserirVideo() {
       prod2._id.toString()
     );
   } catch (err) {
-    logger.error('✗ Erro em inserirVideo:', err);
+    logger.error('Erro em inserirVideo:', err);
   } finally {
     await close();
     process.exit(0);

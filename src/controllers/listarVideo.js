@@ -10,7 +10,7 @@ async function listarVideos() {
     const videos = await Video.listar();
     console.table(videos);
   } catch (err) {
-    logger.error('✗ Erro em listarVideos:', err);
+    logger.error('Erro em listarVideos:', err);
   } finally {
     await close();
     process.exit(0);
